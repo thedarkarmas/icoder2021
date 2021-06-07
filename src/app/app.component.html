@@ -1,0 +1,36 @@
+<!-- <div>
+  <app-action-bar (numberchange)="actonbarn1=$event;sumres()" [notbelow]="0" [step]="1" [notmore]="100"></app-action-bar>
+</div>
+action{{actonbarn1}}
+<div>
+  <app-action-bar [number]="actonbarn2"(numberchange)="actonbarn2=$event ; sumres()"[notbelow]="-200"[step]="10"[notmore]="100"></app-action-bar>
+</div>
+action{{actonbarn2}}
+<div>
+  <app-action-bar  [number]="actonbarn3"(numberchange)="actonbarn3=$event ; sumres()"[notbelow]="-200"[step]="100"[notmore]="400"></app-action-bar>
+</div>
+action{{actonbarn3}}
+<div>
+  <input type="text" pInputText />
+  <button pButton pRipple type="button" icon="pi pi-check" class="p-button-rounded"></button>
+</div>
+<div>
+ผลรวม:{{res}}
+</div> -->
+<div class="container">
+  <header class="container_haeder">
+
+    <span [routerLink]="['home']">home</span>
+    <span [routerLink]="['student']" >student</span>
+    <span [routerLink]="['addstudent']">addstudent</span>
+
+  </header>
+  <main class="container_main">
+    <router-outlet></router-outlet>
+     <!-- <p-button (onClick)="tran()" label="cal"icon="pi pi-check"></p-button>
+     <p-button (onClick)="sum()" label="รวม"icon="pi pi-check"></p-button>
+    5บาท  {{fivebahtlist|json}}
+    1บาท  {{onebahtlist|json}}
+      รวม{{summary}} -->
+    </main>
+</div>
